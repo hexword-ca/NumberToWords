@@ -28,12 +28,12 @@ public class NumbersToWords {
     public static void main(String[] args) {
         System.out.println("Number to Words");
         System.out.println("===============\n");
-        BigDecimal n1 = new BigDecimal(51328376.543d);
+        BigDecimal n1 = new BigDecimal(516328376.543d);
         //BigDecimal n1 = new BigDecimal(576.543d);
-        String fmtstr = String.format("%.02f", n1);
+        String fmtstr = String.format("%.04f", n1);
         System.out.println("Number to convert: " + fmtstr + "\n");
         System.out.println("Output:");
-        System.out.println(CONVERT_NUMBER_TO_WORDS(n1, "dinar", "fills", 3));
+        System.out.println(CONVERT_NUMBER_TO_WORDS(n1, "dollars", "cents", 2));
 
     }
 
